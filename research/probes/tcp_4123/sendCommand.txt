@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?><root><action name="sendCommand" commandName="CMD_SEND_RMC_NAME" commandValue="YOUR_IDENTIFIER_HERE" extra="" /></root>
+<?xml version="1.0" encoding="utf-8"?><root><action name="sendCommand" commandName="CMD_SEND_DISCONNECT" commandValue="" extra="" /></root>

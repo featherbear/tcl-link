@@ -1,0 +1,2 @@
+device.friendlyName - Configurable nickname for the TV
+device.UDN - The last 12 characters are the MAC address in HEX

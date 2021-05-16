@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<root  xmlns="urn:schemas-upnp-org:device-1-0"  xmlns:r="urn:restful-tv-org:schemas:upnp-dd">
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  <device>
+    <deviceType>urn:schemas-upnp-org:device:tvdevice:1</deviceType>
+    <friendlyName>Bedroom</friendlyName>
+    <manufacturer>THOMSON Inc.</manufacturer>
+    <modelName>SMART_TV</modelName>
+    <UDN>uuid:deadbeef-dead-beef-dead-3451802c9012</UDN>
+  </device>
+</root>

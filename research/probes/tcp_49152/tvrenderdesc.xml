@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+<specVersion>
+<major>1</major>
+<minor>0</minor>
+</specVersion>
+<device>
+<deviceType>urn:schemas-upnp-org:device:MediaRenderer:1</deviceType>
+<friendlyName>MS6586_AU(192.168.10.133)</friendlyName>
+<manufacturer>TCL</manufacturer>
+<manufacturerURL>http://www.tcl.com</manufacturerURL>
+<modelDescription>TCL Smart TV</modelDescription>
+<modelName>TCL Media Renderer</modelName>
+<modelNumber>001</modelNumber>
+<modelURL>http://www.tcl.com</modelURL>
+<serialNumber>TCL-01</serialNumber>
+<UDN>uuid:uuid:f81d4fae-7dec-11e1-b9da-700001032338</UDN>
+<dlna:X_DLNADOC xmlns:dlna="urn:schemas-dlna-org:device-1-0">DMR-1.50</dlna:X_DLNADOC>
+<serviceList>
+<service>
+<serviceType>urn:schemas-upnp-org:service:RenderingControl:1</serviceType>
+<serviceId>urn:upnp-org:serviceId:RenderingControl</serviceId>
+<SCPDURL>/rcr.xml</SCPDURL>
+<controlURL>/rcr_control</controlURL>
+<eventSubURL>/rcr_event</eventSubURL>
+</service>
+<service>
+<serviceType>urn:schemas-upnp-org:service:ConnectionManager:1</serviceType>
+<serviceId>urn:upnp-org:serviceId:ConnectionManager</serviceId>
+<SCPDURL>/cmr.xml</SCPDURL>
+<controlURL>/cmr_control</controlURL>
+<eventSubURL>/cmr_event</eventSubURL>
+</service>
+<service>
+<serviceType>urn:schemas-upnp-org:service:AVTransport:1</serviceType>
+<serviceId>urn:upnp-org:serviceId:AVTransport</serviceId>
+<SCPDURL>/avt.xml</SCPDURL>
+<controlURL>/avt_control</controlURL>
+<eventSubURL>/avt_event</eventSubURL>
+</service>
+</serviceList>
+</device>
+</root>
