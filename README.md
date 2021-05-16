@@ -8,13 +8,14 @@ I have a [FFalcon 50UF1 50" TV](https://featherbear.cc/blog/post/my-new-tv/) (A 
 ## HDMI CEC
 
 CEC is a protocol that allows HDMI-connected devices to control each other.  
-_(I had originally tried using a [Banana Pi M2 Zero](http://wiki.banana-pi.org/Banana_Pi_BPI-M2_ZERO) but CEC support was falsely advertised.)_  
+_(I had originally tried using a [Banana Pi M2 Zero](http://wiki.banana-pi.org/Banana_Pi_BPI-M2_ZERO) but CEC support was falsely advertised)_  
 Using a Raspberry Pi  with `cec-utils` I was able to power on the TV using the `as` or `on 0` instructions.  
 **However** powering off the device with `standby 0`, or even the other CEC codes (`10:44:00`, `10:44:6B`, `10:44:6C`) didn't work.
 
 ## TCL Remote
 
-The [MagiConnect](https://play.google.com/store/apps/details?id=com.tnscreen.main) (and the former [nScreen](https://play.google.com/store/apps/details?id=com.tcl.nscreen.pro)) applications communicated to the TV over some protocol. _(I think the MagiConnect uses some proprietary protocol, whereas the nScreen application used a more legacy XML-based message protocol)_
+The [MagiConnect](https://play.google.com/store/apps/details?id=com.tnscreen.main) (and the former [nScreen](https://play.google.com/store/apps/details?id=com.tcl.nscreen.pro)) applications communicated to the TV over some protocol.  
+_(I think the MagiConnect uses some proprietary protocol, whereas the nScreen application used a more legacy XML-based message protocol)_  
 It seemed that the power off command was sent as part of the protocol, however power on was performed through WOL (Wake-On-LAN).  
 Replicating the power off command was achieved after some network capture and analysis (TCP port `4123`).  
 **However** turning on the TV after an extended period of inactivity did not work (despite the _Networked Standby_ setting enabled...)
